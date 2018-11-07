@@ -1,0 +1,6 @@
+<div class="f-block">
+  <input class="mtb" placeholder="Поиск" type="text" (keyup)="keyUp()" [(ngModel)]="ttext">
+</div>
+<div class="panel">
+  <app-ad *ngFor="let ad of ads" [ad]="ad"></app-ad>
+</div>

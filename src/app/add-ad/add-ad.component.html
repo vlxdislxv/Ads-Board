@@ -1,0 +1,26 @@
+<body>
+<div class="ribbon"></div>
+<div class="login">
+  <h1>Добавить Объявление</h1>
+  <form [formGroup]="formGroup" (submit)="frmSub()">
+    <div class="input">
+      <div class="blockinput">
+        <i class="icon-envelope-alt"></i>
+        <div *ngIf="formGroup.controls.name.invalid && formGroup.controls.name.touched" class="wmsg">from 5 to 30 characters!</div>
+        <input formControlName="name" placeholder="Название">
+      </div>
+      <div class="blockinput">
+        <i class="icon-unlock"></i>
+        <div *ngIf="formGroup.controls.text.invalid && formGroup.controls.text.touched" class="wmsg">from 10 to 40 characters!</div>
+        <input formControlName="text" placeholder="Текст">
+      </div>
+      <div class="blockinput">
+        <i class="icon-unlock"></i>
+        <div *ngIf="formGroup.controls.picture.invalid && formGroup.controls.picture.touched" class="wmsg">только .jpg и .png</div>
+        <input formControlName="picture" placeholder="Картинка(url)">
+      </div>
+    </div>
+    <button [disabled]="!formGroup.valid">Добавить</button>
+  </form>
+</div>
+</body>

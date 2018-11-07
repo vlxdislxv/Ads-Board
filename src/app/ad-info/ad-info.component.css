@@ -1,0 +1,20 @@
+.card {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 600px;
+    border: 2px solid lightcoral;
+    color: white;
+    cursor: pointer;
+}
+
+.cont {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://uploads.toptal.io/blog/post_image/120897/0823-AngularTutorial-Waldek_Social-dc80fe3f971e2c38107a4c13c7e774f3.png");
+    background-size: cover;
+}
